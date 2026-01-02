@@ -1,0 +1,103 @@
+:root{
+    --pbg-col : rgb(234, 236, 239) ;
+    --sbg-col : rgb(255, 255, 255) ;
+    --shadow-c : rgba(0, 0, 0, 0.1) ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--pbg-col);
+}
+
+.navbar{
+    background-color: var(--sbg-col);
+    padding-left: 2vh;
+    padding-right: 2vh;
+    height: 10vh;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px var(--shadow-c);
+}
+.navbar .logo h2{
+    font-size: 1.2rem;
+    font-family:cursive;
+    color: black;
+}
+.currencies{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+
+}
+.currencies select{
+    background-color: var(--sbg-col);
+    outline: 1px solid var(--sbg-col) ;
+    border: 1px solid var(--sbg-col) ;
+    box-shadow:  4px 4px var(--shadow-c) ;
+    border-radius : 3%;
+    padding-left:2vw;
+    width:20vw;
+    margin:3vw;
+    height : 4vh;
+
+}
+
+.wrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:80vh;
+}
+.content{
+    background-color: var(--sbg-col);
+    box-shadow: 3px 6px 8px var(--shadow-c) ;
+    border-radius : 2%;
+    padding:3vh;
+    width:50vw;
+    display:flex;
+    flex-direction: column;
+    gap:3vh;
+    align-items: center;
+    height: 60vh;
+    width:80vw;
+}
+
+.heading h2{
+    font-size: 2.5rem;
+    margin-bottom: 2vh;
+}
+
+.box{
+    display:flex;
+    flex-direction: column;
+    gap:6vh;
+    width:60%;
+
+}
+
+.box input {
+    width : 100%;
+    height:8vh;
+    border:none;
+    outline:none;
+    box-shadow: 4px 4px var(--shadow-c) ;
+    border-radius : 2px 3px 4px 1px;
+    padding: 0 10px 0 29px;
+}
+input :focus {
+    border:none;
+    outline:none;
+}
+.input-amount input{
+    background-color: var(--pbg-col);
+   
+}

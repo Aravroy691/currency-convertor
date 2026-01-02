@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Local Smart Free Currency Convertor Web App developed by Arav Roy">
+    <title> Currency Convertor by Arav </title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+                <h2> CurrencyConvertor </h2>
+            </div>
+            <div class="currencies">
+                <div class="input-curr">
+                    <select id="input-currency">
+                        <option value="INR" selected> INR </option>
+                    </select>
+                </div>
+                <div class="output-curr">
+                    <select id="output-currency">
+                        <option value="USD" selected> USD </option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+
+        <div class="wrapper">
+            <div class="content">
+                <header class="heading">
+                    <h2> Convert Currency </h2>
+                </header>
+
+                <div class="box">
+                    <div class="input-amount">
+                        <input type="number" id="input"  placeholder="Enter Amount" />
+                    </div> 
+                    <div class="output-amount">
+                        <input type="number" id="output" placeholder="Converted Amount" disabled />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src = "index.js" ></script>
+</body>
+</html>
