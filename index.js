@@ -7,14 +7,15 @@ async function fetchCurrency(curr){
         if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
-
-        const data = await response.json(); 
-        return data; 
-        } catch (error) {
-        console.error("Fetch error:", error);
-        throw error;
+            const data = await response.json(); 
+            return data; 
+        }
+            catch (error) {
+            console.error("Fetch error:", error);
+            throw error;
     }
 }
+
 
 async function convertCurrency(){
     const amount = Number(document.querySelector("#input").value);
@@ -29,7 +30,7 @@ async function convertCurrency(){
     const data = await fetchCurrency(fromCurrency);
 
     const rate = data.rates[toCurrency];
-    const result = amount / rate;
+    const result = amount * rate;
 
     document.querySelector("#output").placeholder = result.toFixed(2);
 }
